@@ -18,7 +18,7 @@ import java.util.Arrays;
  * A placeholder fragment containing a simple view.
  */
 public class WeatherFragment extends Fragment {
-
+    private static final String APPID = "4c3c9fd618e5d67bb93faf64733a3470";
     private ArrayList<String> items;
     private ArrayAdapter<String> adapter;
 
