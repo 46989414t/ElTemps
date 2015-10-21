@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.example.poblenou.eltemps.json.City;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -36,6 +38,12 @@ public class WeatherFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+        /*City bar = new City();
+        bar.setId(Long.valueOf(3128760));
+        bar.setName("Barcelona");
+        */
+
 
         String[] data = {
                 "Lun 23/6 - Soleado - 31/17",
