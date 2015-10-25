@@ -89,10 +89,17 @@ public class WeatherFragment extends Fragment {
         }
 
         if (id == R.id.action_refresh) {
+            refresh();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+    private void refresh() {
+        OwnApiClient apiClient = new OwnApiClient();
+        apiClient.updateForecasts(adapter);
+    }
+
 
 }
